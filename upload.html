@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품등록</title>
+</head>
+<body>
+	  <form action="">
+	  	<fieldset>
+	  		<legend>상품등록 페이지</legend>
+        <table border="0">
+          <tr>
+            <td>
+            <select name="category" id="">
+                <option value="">카테고리 선택</option>
+                <option value="">음식</option>
+                <option value="">문구</option>
+                <option value="">전자</option>
+                <option value="">스포츠</option>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input id="sell" type="checkbox" name="type" value="m">
+              <label for="sell">판매</label>
+              <input id="lend" type="checkbox" name="type" value="w">
+              <label for="lend">대여</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="name">이름  </label></td>
+            <td><input id="name" type="text" placeholder="이름을 입력하세요."></td>
+          </tr>
+          <tr>
+            <td><label for="ethaddr">계정주소  </label></td>
+            <td><input id="ethaddr" type="text" placeholder="이더리움 계정을 입력하세요."></td>
+          </tr>
+          <tr>
+            <td><label for="price">가격  </label></td>
+            <td><input id="price" type="text" placeholder="(단위 : 에더)"></td>
+          </tr>
+          <tr>
+             <td><label for="content">상세정보</label></td>
+             <td><textarea id="content" name="" id="" cols="30" rows="10"></textarea></td>
+         </tr>
+         <tr>
+            <td>첨부파일</td>
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+             <td></td>
+             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <input type="submit" value="등록"></td>
+         </tr>
+	  	</fieldset>
+	  </form>
+</body></html>

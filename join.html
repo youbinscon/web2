@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 페이지</title>
+</head>
+<body>
+
+	<!--
+		form : 사용자의 정보를 받아 들이고 원하는 페이지로 정보를 보낸다
+		<form action="" method="" enctype="">
+		 action = "데이터가 전달되는 경로를  나타냄"
+		 method = 데이터를 전달하는 방식
+		 		get | post, 생략을 하면 get 방식
+		 get 방식 : 보안이 약하지만 빠르다. 적은 양일 때 좋음
+		 post 방식 : get보다는 느리지만, 많은 양 처리할 때 좋다
+
+		 enctype : 업로드 할 때 사용
+		 name : 폼의 이름 붙이기, 폼이 여러개 일 때, 선택하는 용도
+
+		 form 안에 들어가는 요소 : input, label, select, textarea , datalist,
+	                     button, fieldset, legend
+
+	     input type의 속성들 : text, button, radio, checkbox,  file,  hidden,
+	                 	   number, password,  reset, submit,
+	                  	   tel, color, date, email, time, url, week   range,  search
+	  -->
+
+	  <form action="">
+	  	<fieldset>
+	  		<legend>회원가입 페이지</legend>
+        <table border="0">
+          <tr>
+            <td><label for="id">아이디  </label></td>
+            <td><input id="id" type="text"></td>
+          </tr>
+          <tr>
+            <td><label for="password">비밀번호  </label></td>
+            <td><input id="password" type="password"></td>
+          </tr>
+          <tr>
+            <td><label for="name">이름  </label></td>
+            <td><input id="name" type="text" placeholder="이름을 입력하세요."></td>
+          </tr>
+          <tr>
+            <td><label for="age">나이  </label></td>
+            <td><input id="age" type="number" placeholder="나이를 입력하세요."></td>
+          </tr>
+          <tr>
+            <td>성별</td>
+            <td>
+              <input id="man" type="radio" name="gender" value="m">
+              <label for="man">남자</label>
+              <input id="woman" type="radio" name="gender" value="w">
+              <label for="woman">여자</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="tel">연락처  </label></td>
+            <td>
+            <select name="phone_num1" id="">
+                <option value="">010</option>
+                <option value="">011</option>
+                <option value="">016</option>
+                <option value="">017</option>
+                <option value="">019</option>
+            </select>-
+            <input id="tel" type="text" name="phone_num2">-
+            <input type="text" name="phone_num3">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="ethaddr">계정주소  </label></td>
+            <td><input id="ethaddr" type="text" placeholder="이더리움 계정을 입력하세요."></td>
+          </tr>
+          <tr>
+               <td></td>
+               <td><input type="submit" value="가입"></td>
+           </tr>
+	  	</fieldset>
+	  </form>
+</body>
+</html>
